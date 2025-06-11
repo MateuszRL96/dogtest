@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --background-primary: #f5f0e8;
+  --background-secondary: #ebe5d9;
 }
 
 @theme inline {
@@ -23,4 +25,14 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background-primary);
+}
+
+/* Custom gradient backgrounds */
+.bg-warm-gradient {
+  background: linear-gradient(to bottom, var(--background-primary), var(--background-secondary));
+}
+
+.bg-warm-gradient-reverse {
+  background: linear-gradient(to bottom, var(--background-secondary), var(--background-primary));
 }
